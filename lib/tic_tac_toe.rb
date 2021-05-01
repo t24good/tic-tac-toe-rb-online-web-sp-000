@@ -65,9 +65,9 @@ def won?(board)
   WIN_COMBINATIONS.detect do |win_combo|
     position_1 = board[win_combo[0]]
     position_2 = board[win_combo[1]]
-    position_3 = board[win_combo[3]]
+    position_3 = board[win_combo[2]]
 
     position_1 == "X" && position_2 == "X" position_3
     position_1 == "O" && position_2 == "O" position_3
-  end 
+  end
 end
