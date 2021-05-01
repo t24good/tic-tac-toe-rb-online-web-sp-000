@@ -42,13 +42,14 @@ def turn(board)
   index = input_to_index(input)
 
   if valid_move?(board, index)
-    move(board,index,current_player)
+    move(board, index, current_player)
   end
 end
 
 def turn_count(board)
   board.count do |position|
     position != " "
+  end
 end
 
 def current_player(board)
